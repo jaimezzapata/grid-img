@@ -1,0 +1,88 @@
+/* ---------------------- *\
+    BARRA DE NAVEGACION
+\* ---------------------- */
+
+header {
+  background-color: #343a40;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.6);
+}
+
+.navbar {
+  max-width: 1050px;
+  height: 65px;
+  margin: 0 auto;
+  background-color: #343a40;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.navbar-titulo {
+  color: white;
+  margin: 0 0 0 10px;
+}
+
+.navbar-lista {
+  height: 100%;
+  padding-left: 0;
+  margin: 0 0 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.elemento-lista {
+  height: 100%;
+  list-style-type: none;
+}
+
+.elemento-lista .enlace {
+  height: inherit;
+  color: #9a9d93;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.elemento-lista .enlace:hover {
+  color: #c9ccbe;
+}
+.enlace-activo {
+  color: white !important;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: 55px;
+  }
+
+  .navbar-titulo {
+    font-size: 1.45em;
+  }
+
+  .elemento-lista .enlace {
+    font-size: 0.95em;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    height: 45px;
+  }
+
+  .navbar-titulo {
+    font-size: 1.4em;
+  }
+
+  .elemento-lista .enlace {
+    font-size: 0.9em;
+    padding: 0 10px;
+  }
+}

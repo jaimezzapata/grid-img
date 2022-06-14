@@ -1,0 +1,58 @@
+/* ---------------------- *\
+    SECCION PINTEREST
+\* ---------------------- */
+
+.pinterest-grilla {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 20px 5px 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 252px);
+  grid-gap: 5px;
+  justify-content: center;
+}
+
+.pinterest-link-container {
+  width: 100%;
+  position: relative;
+  border-radius: 8px;
+  cursor: zoom-in;
+}
+.pinterest-link-container:hover {
+  background-color: #f2f2f2;
+}
+.pinterest-link-container.item-1-fila {
+  grid-row-end: span 1;
+}
+.pinterest-link-container.item-2-filas {
+  grid-row-end: span 2;
+}
+.pinterest-link-container.item-3-filas {
+  grid-row-end: span 3;
+}
+
+.pinterest-container-imagen {
+  margin: 8px 8px;
+}
+
+.pinterest-container-imagen img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media screen and (max-width: 768px) {
+  .pinterest-grilla {
+    padding: 6px 0;
+    grid-template-columns: repeat(auto-fill, 230px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pinterest-grilla {
+    padding: 3px 0;
+    grid-template-columns: repeat(auto-fill, 200px);
+  }
+}

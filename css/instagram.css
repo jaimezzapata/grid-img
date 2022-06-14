@@ -1,0 +1,79 @@
+/* ---------------------- *\
+    SECCION INSTAGRAM
+\* ---------------------- */
+
+.instagram-grilla {
+  max-width: 955px;
+  margin: 0 auto;
+  padding: 28px 20px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 28px;
+}
+
+.instagram-link-container {
+  width: 100%;
+  position: relative;
+}
+
+.instagram-container-imagen {
+  margin: 0;
+}
+
+.instagram-container-imagen img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.instagram-capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.instagram-capa:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.instagram-capa-texto {
+  color: transparent;
+  margin: 0;
+  height: 100%;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.instagram-capa-texto:hover {
+  color: white;
+}
+
+.instagram-capa-texto span {
+  margin: 0 15px;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media screen and (max-width: 768px) {
+  .instagram-grilla {
+    grid-gap: 3px;
+    padding: 10px 5px;
+  }
+
+  .instagram-capa-texto {
+    flex-direction: column;
+  }
+
+  .instagram-capa-texto span {
+    margin: 1px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .instagram-capa-texto {
+    font-size: 0.9em;
+  }
+}
